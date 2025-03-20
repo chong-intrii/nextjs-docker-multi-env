@@ -9,7 +9,7 @@ export default function Home() {
 					params.append("username", "administrator");
 					params.append("password", '1234');
     try {
-      const loginResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/sso/user/login`, {
+      const loginResponse = await fetch(`/sso/user/login`, {
         method: "POST",
         body: params,
         headers: {
